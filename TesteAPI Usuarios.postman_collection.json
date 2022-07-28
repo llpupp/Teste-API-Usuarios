@@ -121,7 +121,13 @@
 			],
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n  \"nome\": \"Regina Stela Pupp\",\r\n  \"email\": \"reginaspupp_qa@ebac.com.br\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
@@ -343,7 +349,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "        {\r\n             \"email\": \"reginaspupp_qa@ebac.com.br\",\r\n            \"password\": \"teste\"\r\n           \r\n        }",
+					"raw": "        {\r\n            \"email\": \"reginaspupp_qa@ebac.com.br\",\r\n            \"password\": \"teste\"\r\n           \r\n        }",
 					"options": {
 						"raw": {
 							"language": "json"
